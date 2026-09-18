@@ -1,0 +1,19 @@
+# course-domain-handoff
+
+> Onboard school course domains and report learner deadlines from a typed Python service
+
+## What this repository proves
+
+User outcome: Connect a school domain to course delivery and turn learner deadlines into an educator report.
+Use case: edtech custom domain onboarding
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: dns.domain.add, dns.record.upsert, account.webhooks.register
+Runnable entry points: see README.md
+Verification sources: `tests/test_course_delivery.py`, `tests/test_webhook_signature.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

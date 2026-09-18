@@ -1,0 +1,2 @@
+"""Course domain onboarding example."""
+
